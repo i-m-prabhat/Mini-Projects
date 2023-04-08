@@ -1,0 +1,40 @@
+ #header {
+     min-height: 200px;
+     width: 900px;
+     margin: 150px auto;
+ }
+
+ .a {
+     min-height: 250px;
+     width: 250px;
+     float: left;
+     border: 10px solid aqua;
+     box-shadow: 0px 0px 25px 10px black inset;
+     border-radius: 15px;
+     margin: 25px;
+     color: aqua;
+     font-size: 150px;
+     text-align: center;
+     line-height: 250px;
+     font-family: digital-7;
+     box-sizing: border-box;
+ }
+
+ #btn {
+     width: 200px;
+     height: 70px;
+     font-size: 40px;
+     color: aqua;
+     border: 5px solid aqua;
+     background-color: black;
+     border-radius: 40px;
+     box-shadow: 0px 0px 10px 4px aqua;
+     margin-top: 20px;
+ }
+
+ #btn:hover {
+     background-color: purple;
+     border: 5px solid white;
+     box-shadow: 0px 0px 10px 4px aqua;
+     color: white;
+ }
