@@ -1,0 +1,15 @@
+ div {
+     min-height: 150px;
+     width: 100%;
+     box-sizing: border-box;
+     /* border: 20px solid red; */
+     border-radius: 10px;
+     padding: 50px;
+     box-shadow: 0px 0px 15px 4px black inset;
+     /* background: white; */
+     font-size: 250px;
+     color: red;
+     text-align: center;
+     font-family: digital-7;
+     margin: 180px auto;
+ }
