@@ -1,0 +1,46 @@
+{
+    "blogs": [
+    {
+      "title": "HTML History",
+      "description": "The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many different versions of HTML. The most widely used version throughout the 2000's was HTML 4.01, which became an official standard in December 1999. Another version, XHTML, was a rewrite of HTML as an XML language.",
+      "date": "2/12/2023, 1:48:55 PM",
+      "titleSlug": "html-history",
+      "id": 1
+    },
+    {
+      "title": "CSS Solved a Big Problem",
+      "description": "HTML was NEVER intended to contain tags for formatting a web page!\n\nHTML was created to describe the content of a web page, like:\n\n<h1>This is a heading</h1>\n\n<p>This is a paragraph.</p>\n\nWhen tags like <font>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.\n\nTo solve this problem, the World Wide Web Consortium (W3C) created CSS.\n\nCSS removed the style formatting from the HTML page!",
+      "date": "2/12/2023, 1:50:34 PM",
+      "titleSlug": "css-solved-a-big-problem",
+      "id": 2
+    },
+    {
+      "title": "java brief history",
+      "description": "Java was created at Sun Microsystems, Inc., where James Gosling led a team of researchers in an effort to create a new language that would allow consumer electronic devices to communicate with each other. Work on the language began in 1991, and before long the team's focus changed to a new niche, the World Wide Web.",
+      "date": "2/12/2023, 1:52:24 PM",
+      "titleSlug": "java-brief-history",
+      "id": 3
+    },
+    {
+      "title": "is JavaScript programming language",
+      "description": "JavaScript is a lightweight interpreted programming language. The web browser receives the JavaScript code in its original text form and runs the script from that. From a technical standpoint, most modern JavaScript interpreters actually use a technique called just-in-time compiling to improve performance; the JavaScript source code gets compiled into a faster, binary format while the script is being used, so that it can be run as quickly as possible. However, JavaScript is still considered an interpreted language, since the compilation is handled at run time, rather than ahead of time.",
+      "date": "2/12/2023, 1:56:19 PM",
+      "titleSlug": "is-javascript-programming-language",
+      "id": 4
+    },
+    {
+      "title": "React Benefits and OverView",
+      "description": "React is a popular JavaScript library for building user interfaces. Developed and maintained by Facebook, React has become one of the most widely-used tools for front-end web development, allowing developers to build fast, dynamic and reusable UI components.\n\nReact is based on the concept of components, which are self-contained units of UI that manage their own state and render their own markup. Components are organized into a tree structure, and when the state of a component changes, React efficiently updates the DOM to reflect those changes.\n\nOne of the key benefits of React is its ability to manage and update the state of a large and complex application with ease. React uses a virtual DOM, which is a lightweight in-memory representation of the actual DOM, to keep track of changes to the UI. When a component's state changes, React updates the virtual DOM, and then calculates the most efficient way to update the actual DOM.\n\nAnother major advantage of React is its ability to handle dynamic data. React components can be passed props, or data, from their parent component, and can easily respond to changes in this data by re-rendering themselves. This makes React a great choice for building single-page applications, as well as for integrating with APIs to dynamically display data on a website.\n\nReact also has a large and supportive community, with a wealth of resources and tools available for developers to use. From the React documentation to third-party libraries and tools like React Router, React Redux and Create React App, there are numerous resources available to help developers get up and running with React quickly and easily.\n\nIn conclusion, React is a powerful and flexible tool for building dynamic and modern user interfaces. With its component-based architecture, virtual DOM and support for dynamic data, React has become one of the most popular choices for front-end web development, and will likely continue to be so for many years to come.",
+      "date": "2/12/2023, 2:35:51 PM",
+      "titleSlug": "react-benefits-and-overview",
+      "id": 5
+    },
+    {
+      "title": "React Hooks Overview",
+      "description": "React Hooks are a feature introduced in React 16.8 that allow developers to use state and other React features in functional components. Prior to the introduction of Hooks, state management and other React features could only be used in class components, making the code more complex and difficult to manage.\n\nHooks provide a more straightforward and concise way to add state and other functionality to functional components, making it easier to build and manage complex user interfaces. Some of the most commonly used hooks include useState, useEffect, useContext and useReducer.\n\nThe useState hook allows developers to add state to functional components. It returns an array with two elements, the first being the current state value, and the second being a function to update the state. This hook can be used in place of the this.state and this.setState properties found in class components.\n\nThe useEffect hook allows developers to run side effects in functional components, such as fetching data, setting up subscriptions or updating the DOM. This hook is similar to the componentDidMount and componentDidUpdate lifecycle methods found in class components.\n\nThe useContext hook allows developers to access the context API, which is a way of sharing data between components without passing props down through multiple levels of the component tree. This can be useful for managing global state in a React application.\n\nThe useReducer hook provides a way to manage complex state changes in functional components, by using a reducer function to handle state updates. This hook can be used in place of the this.setState property in class components.\n\nIn conclusion, React Hooks provide a more intuitive and efficient way to manage state and other functionality in functional components, making it easier to build and manage complex user interfaces. They are a powerful feature that can greatly simplify your code and increase the readability and maintainability of your React applications ",
+      "date": "2/12/2023, 2:38:37 PM",
+      "titleSlug": "react-hooks-overview",
+      "id": 6
+    }
+  ]
+}
