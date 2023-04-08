@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME | DesireCart</title>
+        <link rel="shortcut icon" href="images/cartlogo.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/bootstrap.bundle.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body class="bg-light">
+        <!-- info -->
+        <div class="container pt-2">
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <i class="fa-solid fa-envelope"></i>
+                    Example1234@gmail.com
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa-solid fa-phone"></i>+91 9876543210
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa-brands fa-facebook mx-2"></i>
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                    <i class="fa-brands fa-instagram mx-2"></i>
+                    <i class="fa-brands fa-youtube mx-2"></i>
+                </div>
+            </div>
+            <div class="row pt-4 text-center">
+                <div class="col-sm-3 fs-2">
+                    Desire<b class="mycolor">Cart<i class="fa-solid fa-shopping-cart"></i></b>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputGroup1"
+                                placeholder="Search Items Here">
+                            <label for="floatingInputGroup1">Search Items Here</label>
+                        </div>
+                        <span class="input-group-text mybg"><i class="fa-solid fa-search text-white"></i></span>
+                    </div>
+                </div>
+                <div class="col-sm-3 fs-2">
+                    <a href="order.html">
+                        <i class="fa-solid fa-cart-plus mycolor"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg bg-dark mt-4 sticky-top">
+            <div class="container">
+                <a class="navbar-brand fs-4" href="index.html"><b class="mycolor">DESIRECART</b></a>
+                <button class="navbar-toggler text-white mybg" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon mycolor "></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html"><i
+                                    class="fa-solid fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="all-product.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-brands fa-product-hunt"></i> PRODUCT
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-white dd" href="mens-product.html">MEN'S</a></li>
+                                <li><a class="dropdown-item text-white dd" href="womens-product.html">WOMEN'S</a></li>
+                                <li><a class="dropdown-item text-white dd" href="kids-product.html">KID'S</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="order.html"><i class="fa-solid fa-shopping-cart"></i>
+                                MY
+                                ORDERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="profile.html"><i class="fa-solid fa-user"></i> MY
+                                PROFILE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="support.html"><i class="fa-solid fa-phone"></i>
+                                CUSTOMER
+                                SUPPORT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="signup.html"><i class="fa-solid fa-user"></i>
+                                SIGN-UP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#signin"><i
+                                    class="fa-solid fa-key"></i> SIGN-IN</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- sign up modal -->
+        <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog mt-5">
+                <div class="modal-content text-bg-secondary">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Sign-in Here</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="email" name="" id="" class="form-control mb-4 mt-2"
+                            placeholder="Enter Your Username...">
+                        <input type="password" name="" id="" class="form-control mb-2"
+                            placeholder="Enter Your Password...">
+                    </div>
+                    <button class="btn text-center mybg text-white mx-auto mb-3">LOGIN</button>
+                    <div class="text-center mx-auto mb-4">Have Not Account yet? <a href="signup.html" class="text-white"
+                            style="text-decoration: none;"><b>SIGNUP</b></a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- slide start  -->
+        <div id="carouselExampleCaptions" class="carousel slide p-0" data-bs-ride="true" data-bs-interval="600">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/women-wear.jpg" class="d-block w-100 ch" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Women-wear Collections</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/kids-wear2.jpg" class="d-block w-100 ch" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Kid's wear collections</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/mens-wear.jpg" class="d-block w-100 ch" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>MEN's Collections</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- collections  -->
+        <div class="container-fluid">
+            <div class="row mt-3 ms-3 me-3">
+                <div class="col-sm-4">
+                    <div class="card1 w-100">
+                        <a href="mens-product.html"><button class="btn rounded-0 button">MEN'S</button></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card2 w-100">
+                        <a href="womens-product.html"><button class="btn rounded-0 button">WOMEN'S</button></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card3 w-100">
+                        <a href="kids-product.html"><button class="btn rounded-0 button">KID'S</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our PRODUCT -->
+        <div class="container-fluid">
+            <div class="row pt-5 pb-5">
+                <div class="col-sm-12 text-center fs-2 mt-3.">OUR <b class="mycolor">PRODUCTS <i
+                            class="fa-solid fa-cart-shopping"></i></b>
+                </div>
+            </div>
+            <div class="row gy-3 gx-3 ms-3">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/saree.jpg" style="height: 300px;" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Womens Saree</h5>
+                            <p class="card-text">Women Plain Saree</p>
+                            <span class="card-text"><b>SIZE: L PRICE: <span class="text-success">1299.0/-</span>
+                                    <del>2200/</del></b></span>
+                            <a href="#" class="btn mybg text-white float-start rounded-0 mt-3"
+                                style="font-size: 12px;">ADD TO
+                                CART</a>
+                            <a href="#" class="btn mybg text-white float-end rounded-0 mt-3"
+                                style="font-size: 12px;">ORDER
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/tshirt.jpg" style="height: 300px;" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mens Shirt</h5>
+                            <p class="card-text">Mens check shirts</p>
+                            <span class="card-text"><b>SIZE: L PRICE: <span class="text-success">699.0/-</span>
+                                    <del>1099/</del></b></span>
+                            <a href="#" class="btn mybg text-white float-start rounded-0 mt-3"
+                                style="font-size: 12px;">ADD TO
+                                CART</a>
+                            <a href="#" class="btn mybg text-white float-end rounded-0 mt-3"
+                                style="font-size: 12px;">ORDER
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/kids-jeans.jpg" style="height: 300px;" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kids jeans</h5>
+                            <p class="card-text">Kids slim fit jeans</p>
+                            <span class="card-text"><b>SIZE: S PRICE: <span class="text-success">499.0/-</span>
+                                    <del>789.0/</del></b></span>
+                            <a href="#" class="btn mybg text-white float-start rounded-0 mt-3"
+                                style="font-size: 12px;">ADD TO
+                                CART</a>
+                            <a href="#" class="btn mybg text-white float-end rounded-0 mt-3"
+                                style="font-size: 12px;">ORDER
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/kurtee.jpg" style="height: 300px;" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Girls Kurtees</h5>
+                            <p class="card-text">Girl Long fit Kurtee</p>
+                            <span class="card-text"><b>SIZE: M PRICE: <span class="text-success">799.0/-</span>
+                                    <del>1000/</del></b></span>
+                            <a href="#" class="btn mybg text-white float-start rounded-0 mt-3"
+                                style="font-size: 12px;">ADD TO
+                                CART</a>
+                            <a href="#" class="btn mybg text-white float-end rounded-0 mt-3"
+                                style="font-size: 12px;">ORDER
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/women2.jpg" style="height: 300px;" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Womens Saree</h5>
+                            <p class="card-text">Women Plain Saree</p>
+                            <span class="card-text"><b>SIZE: L PRICE: <span class="text-success">1299.0/-</span>
+                                    <del>2200/</del></b></span>
+                            <a href="#" class="btn mybg text-white float-start rounded-0 mt-3"
+                                style="font-size: 12px;">ADD TO
+                                CART</a>
+                            <a href="#" class="btn mybg text-white float-end rounded-0 mt-3"
+                                style="font-size: 12px;">ORDER
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/mens3.jpg" style="height: 300px;" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mens Shirt</h5>
+                            <p class="card-text">Mens check shirts</p>
+                            <span class="card-text"><b>SIZE: L PRICE: <span class="text-success">699.0/-</span>
+                                    <del>1099/</del></b></span>
+                            <a href="#" class="btn mybg text-white float-start rounded-0 mt-3"
+                                style="font-size: 12px;">ADD TO
+                                CART</a>
+                            <a href="#" class="btn mybg text-white float-end rounded-0 mt-3"
+                                style="font-size: 12px;">ORDER
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/kids2.jpg" style="height: 300px;" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kids jeans</h5>
+                            <p class="card-text">Kids slim fit jeans</p>
+                            <span class="card-text"><b>SIZE: S PRICE: <span class="text-success">499.0/-</span>
+                                    <del>789.0/</del></b></span>
+                            <a href="#" class="btn mybg text-white float-start rounded-0 mt-3"
+                                style="font-size: 12px;">ADD TO
+                                CART</a>
+                            <a href="#" class="btn mybg text-white float-end rounded-0 mt-3"
+                                style="font-size: 12px;">ORDER
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/kids3.jpg" style="height: 300px;" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Boys new collections</h5>
+                            <p class="card-text">Girl Long fit Kurtee</p>
+                            <span class="card-text"><b>SIZE: M PRICE: <span class="text-success">799.0/-</span>
+                                    <del>1000/</del></b></span>
+                            <a href="#" class="btn mybg text-white float-start rounded-0 mt-3"
+                                style="font-size: 12px;">ADD TO
+                                CART</a>
+                            <a href="#" class="btn mybg text-white float-end rounded-0 mt-3"
+                                style="font-size: 12px;">ORDER
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Big Sale  -->
+        <div class="container">
+            <div class="row pt-3 pb-3">
+                <div class="col-sm-12 text-center fs-2 mt-3.">BIG <b class="mycolor">SALE!</b>
+                </div>
+            </div>
+
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-5">
+
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        src="images/offer1.jpg" alt="">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1 text-center">70% off in Womens collections <br><span
+                            class="text-muted fs-5">It’ll
+                            blow your
+                            mind.</span></h2>
+                    <p class=" text-center ">New Arrival New collection. <br>
+                        flat 50% off in every item You buy from DESIRECART. <br>
+                        Offer valid for 5 day only. <br>
+                        HURRY UP!
+                    </p>
+                    <center>
+                        <div class="btn mybg text-white">SHOP NOW</div>
+                    </center>
+                </div>
+            </div>
+            <div class="row featurette d-flex justify-content-center align-items-center mt-2 ">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1 text-center">50% off in All items <br><span
+                            class="text-muted fs-5">It’ll
+                            blow your
+                            mind.</span></h2>
+                    <p class=" text-center ">New Arrival New collection. <br>
+                        flat 50% off in every item You buy from DESIRECART. <br>
+                        Offer valid for 5 day only. <br>
+                        HURRY UP!
+                    </p>
+                    <center>
+                        <div class="btn mybg text-white">SHOP NOW</div>
+                    </center>
+                </div>
+                <div class="col-md-5">
+
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        src="images/offer2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Our services -->
+        <div class="container">
+            <div class="row pt-3 pb-3">
+                <div class="col-sm-12 text-center fs-2 mt-3.">OUR <b class="mycolor">SERVICES <i
+                            class="fa-solid fa-wand-magic-sparkles"></i></b>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 border border- p-4">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <i class="fa-solid fa-truck mycolor fs-1"></i>
+                        </div>
+                        <div class="col-sm-9"><b>FREE SHIPPING</b>
+                            <br>
+                            For All Oreder Upto <i class="fa-solid fa-indian-rupee-sign"></i> 2000
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 border border- p-4">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <i class="fa-regular fa-clock mycolor fs-1"></i>
+                        </div>
+                        <div class="col-sm-9"><b>DELIVERY ON TIME</b>
+                            <br>
+                            Fastest Delivery at doorstep
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 border border- p-4">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <i class="fa-solid fa-lock mycolor fs-1"></i>
+                        </div>
+                        <div class="col-sm-9"><b>SECURE PAYMENT</b>
+                            <br>
+                            !00% Secure payment
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer  -->
+        <div class="container-fluid bg-dark text-white mt-3">
+            <div class="container">
+                <footer class="pt-5 py-1">
+                    <div class="row">
+                        <div class="col-6 col-md-3 mb-3">
+                            <div class="fs-4">
+                                Desire<b class="mycolor">Cart<i class="fa-solid fa-shopping-cart"></i></b>
+                            </div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">Address: Lucknow Utter Pradesh 221469</li>
+                                <li class="nav-item mb-2">Phone: +91 9876543210</li>
+                                <li class="nav-item mb-2">Example1234@gmail.com</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Information</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About Us</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Checkout</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>My Account</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">My Account</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shopping Cart</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 offset-md-1 mb-3">
+                            <form>
+                                <h5>Join Our Newsletter Now</h5>
+                                <p>Get E-mail updates about our latest shop and special offers.</p>
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control"
+                                        placeholder="Email address">
+                                    <button class="btn mybg text-white" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                        <p>&copy; 2022 DESIRECART, Inc. All rights reserved.</p>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-dark" href="#"><i
+                                        class="fa-brands fa-twitter mycolor"></i></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><i
+                                        class="fa-brands fa-instagram mycolor"></i></a>
+                            </li>
+                            <li class="ms-3"><a class="link-dark" href="#"><i
+                                        class="fa-brands fa-facebook mycolor"></i></a>
+                            </li>
+                            <li class="ms-3"><a class="link-dark" href="#"><i
+                                        class="fa-brands fa-youtube mycolor"></i></a>
+                            </li>
+                            <li class="ms-3"><a class="link-dark" href="#"><i
+                                        class="fa-brands fa-telegram mycolor"></i></a>
+                            </li>
+                            <li class="ms-3"><a class="link-dark" href="#"><i
+                                        class="fa-brands fa-whatsapp mycolor"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- FEEDBACK -->
+        <div id="fh">
+            <a href="feedback.html" style="text-decoration: none;"><span class="input-group mybg rounded-5 text-center"
+                    style="width: 200px;">
+                    <b class="text-white fs-4 ps-3">FEEDBACK</b>
+                    <span class="input-group-text rounded-5 ms-2"> <i
+                            class="fa-solid fa-comments fs-4 mycolor"></i></span>
+                </span>
+            </a>
+        </div>
+    </body>
+
+</html>
