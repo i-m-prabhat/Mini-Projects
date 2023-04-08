@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product in localStorage</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+
+        <!-- <h1>Add Product here</h1> -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <fieldset class="form-control border-1 bg-light">
+                        <legend border-1">Add Product here</legend>
+                        <form id="form" class="form-control bg-light" method="post"
+                            onsubmit="return addProduct(event);">
+                            <input type="hidden" name="index" id="index" value="" readonly>
+                            <p> Product Name:
+                                <input class="form-control border-1 border-primary bg-light"
+                                    placeholder="Enter Product Name...." type="text" id="name" name="name">
+                            </p>
+                            <p>
+                                Description:
+                                <textarea class="form-control border-1 border-primary bg-light"
+                                    placeholder="Write Some Product Description..." id="description"
+                                    name="description"></textarea>
+                            </p>
+                            <p>
+                                Price:
+                                <input class="form-control border-1 border-primary bg-light"
+                                    placeholder="Enter Product Price" type="text" id="price" name="price">
+                            </p>
+                            <p>
+                                Produce Image:
+                                <input class="form-control border-1 border-primary bg-light" type="file" name="pic"
+                                    id="pic" onchange="productPic(this);">
+                            </p>
+                            <p>
+                                <input class="form-control btn btn-outline-primary" type="submit" name="submit"
+                                    value="Add Product" id="submit">
+                                <input class="form-control btn btn-outline-primary" style="display: none;" type="button"
+                                    name="update" id="update" onclick="updateProduct()" value="Update Product">
+                            </p>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="container-fluid text-white">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <h1 class="text-center">Product Details</h1>
+                    <table rules="1" class="form-control" border="1">
+                        <thead>
+                            <th>SR No.</th>
+                            <th>Product Name</th>
+                            <th>Product Description</th>
+                            <th>Product Price</th>
+                            <th>Product images</th>
+                            <th>Edit|Delete</th>
+                        </thead>
+                        <tbody id="pr_data">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+        <script src="./script.js" type="text/javascript" rel="javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
