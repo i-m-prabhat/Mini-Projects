@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background: linear-gradient(45deg, red, green, blue);
+                background-size: cover;
+            }
+
+            h1 {
+                color: #fff;
+                text-decoration: underline;
+                text-align: center;
+            }
+
+            #box {
+                height: 550px;
+                width: 500px;
+                background: rgba(0, 0, 0, .5);
+                border: 10px double white;
+                margin: 10px auto;
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px 2px white, 0px 0px 35px 12px white;
+                padding: 5px 25px;
+                box-sizing: border-box;
+                color: white;
+            }
+
+            p {
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                background: white;
+                color: red;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px 2px black inset;
+                padding: 10px;
+                border: 10px double white;
+            }
+
+            .a {
+                color: #000;
+                height: 50px;
+                width: 50px;
+                background: white;
+                border: 8px dotted springgreen;
+                border-radius: 5px;
+                /* box-shadow: 0px 0px 5px 4px black inset; */
+                float: left;
+                margin: 10px;
+                text-align: center;
+                line-height: 50px;
+                font-size: 45px;
+            }
+
+            i {
+                font-size: 30px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Guess The Number</h1>
+        <div id="box">
+            <p>Let Start the Game </p>
+            <i></i>
+            <br>
+            <div class="a" onclick="demo(this)">1</div>
+            <div class="a" onclick="demo(this)">2</div>
+            <div class="a" onclick="demo(this)">3</div>
+            <div class="a" onclick="demo(this)">4</div>
+            <div class="a" onclick="demo(this)">5</div>
+            <div class="a" onclick="demo(this)">6</div>
+            <div class="a" onclick="demo(this)">7</div>
+            <div class="a" onclick="demo(this)">8</div>
+            <div class="a" onclick="demo(this)">9</div>
+            <div class="a" onclick="demo(this)">10</div>
+        </div>
+        <script>
+
+            let demo = (x) =>
+            {
+                var w = document.querySelector("#w")
+                var l = document.querySelector("#l")
+                var msg = document.querySelector("p")
+                var i = document.querySelector("i")
+                w.currentTime = 0
+                l.currentTime = 0
+                var rno = Math.floor(Math.random() * 10) + 1
+                i.innerText = `Current Number is : ${rno}`
+                if (rno == x.innerText)
+                {
+                    msg.innerText = "Congratulations! You won "
+                    msg.style.color = "green"
+                    w.play()
+                    l.pause()
+                }
+                else
+                {
+                    msg.innerText = "Opps! You lose"
+                    msg.style.color = "red"
+                    l.play()
+                    w.pause()
+                }
+            }
+        </script>
+        <audio src="Congratulations.mp3" id="w"></audio>
+        <audio src="Wrong.mp3" id="l"></audio>
+    </body>
+
+
+</html>
