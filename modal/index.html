@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Modal</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+		<!--this is js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+
+        <!-- start modal -->
+        <!-- Button trigger modal -->
+        <div class="container w-50 mx-auto mt-5 bg-light">
+            <b class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#box">Career</b>
+            <b class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#box2">FEEDBACK</b>
+            <b class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#box3">GET A QUOTE</b>
+            <b class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#box4">Contact</b>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="box" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body px-4 text-bg-light">
+                        <div class="col-md-12 p-4 pt-4 pb-5 form-area">
+                            <h3 style="text-align:center;font-family:calibri;"><label><b>APPLY FOR JOB</b> </label></h3>
+                            <div class="contact-form-wrapper">
+                                <p>
+                                </p>
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-sm-6 mb-2">
+                                            <label>Apply For </label>
+                                            <select name="applyfor" required="" class="form-control rounded-0">
+                                                <option>Choose </option>
+                                                <option>Jr. Software Developer</option>
+                                                <option>Software Developer</option>
+                                                <option>Web Designer</option>
+                                                <option>Accountant</option>
+                                                <option>Telecaller</option>
+                                                <option>HR Manager</option>
+                                                <option>Sale Executive</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-sm-6 mb-2">
+                                            <label>Name</label>
+                                            <input name="name" required class="form-control rounded-0"
+                                                placeholder="Enter Name" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 mb-2">
+                                            <label>Email</label>
+                                            <input name="email" required="" placeholder="Enter Email" type="text"
+                                                class="form-control rounded-0">
+                                        </div>
+                                        <div class="col-sm-6 mb-2">
+                                            <label>Phone</label>
+                                            <input name="phone" required="" placeholder="Enter Mobile" type="text"
+                                                class="form-control rounded-0">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 mb-2">
+                                            <label>Location</label>
+                                            <textarea required="" placeholder="Enter Full Address" name="location"
+                                                style="height: 127px;" class="form-control rounded-0"></textarea>
+                                        </div>
+                                        <div class="col-sm-6 mb-2">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+
+                                                    <label>City</label>
+                                                    <select required="" name="city" class="form-control rounded-0">
+                                                        <option>Choose City</option>
+                                                        <option>Lucknow</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label style="margin-top:10px;">Choose File</label>
+                                                    <div class="input-group mb-2">
+                                                        <input type="file" name="myfile" class="form-control rounded-0">
+                                                        <i class="input-group-text text-dark">
+                                                            <i class="fa-solid fa-upload"></i>
+                                                        </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-sm-12">
+                                    <div class="btn btn-success w-100">Submit Resume</div>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class="modal fade" id="box2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Testimonial</h4>
+                        <b class="text-danger float-end" data-bs-dismiss="modal"><i
+                                class="fa-solid fa-circle-xmark"></i></b>
+                    </div>
+                    <div class="modal-body px-4 text-bg-light">
+
+                        <form action="#">
+
+                            <div class="col-sm-12">Enter Your Client name
+                                <input class="form-control" name="pname">
+
+                                Enter Your Designation
+                                <input class="form-control" name="purl">
+                            </div>
+                            <div class="col-sm-12">
+                                Portal belongs to
+                                <textarea name="pfor" class="form-control"></textarea>
+                            </div>
+                            <div class="col-sm-12">
+                                choose Image
+
+                                <input type="file" name="upload_image" id="upload_image" class="form-control">
+                                <br>
+                                <div id="uploaded_image" style="float:right;"></div>
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="submit" class="btn btn-primary w-25" value="Add">
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="box3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Get a Quote</h4>
+                        <b class="text-danger float-end" data-bs-dismiss="modal"><i
+                                class="fa-solid fa-circle-xmark"></i></b>
+                    </div>
+                    <div class="modal-body px-4 text-bg-light">
+
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="pb-0 mb-0 mt-3">Your Name:</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your Name" name="name"
+                                        required="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="pb-0 mb-0 mt-3">Your Email:</label>
+                                    <input type="email" class="form-control" placeholder="Enter Your Email" name="email"
+                                        required="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="pb-0 mb-0 mt-3">Mobile No:</label>
+                                    <input type="text" class="form-control" placeholder="Enter Mobile Number"
+                                        name="mobile" required="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="pb-0 mb-0 mt-3">Project Title:</label>
+                                    <input type="text" class="form-control" placeholder="Project Title" name="title"
+                                        required="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="pb-0 mb-0 mt-3">Project Type:</label>
+                                    <input type="text" class="form-control" placeholder="Project Type" name="type"
+                                        required="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="pb-0 mb-0 mt-3">Cost of Project:</label>
+                                    <input type="text" class="form-control" placeholder="Cost of Project" name="cost"
+                                        required="">
+                                </div>
+                                <div class="col-sm-12">
+                                    <label class="pb-0 mb-0 mt-3">Description:</label>
+                                    <textarea class="form-control" placeholder="Describe Your Project"
+                                        name="description" required=""></textarea>
+                                </div>
+                                <div class="col-sm-12 mt-4 pb-4">
+                                    <input type="submit" name="subm" value="Send" class="form-control btn btn-primary">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="box4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Get in Touch</h4>
+                        <b class="text-danger float-end" data-bs-dismiss="modal"><i
+                                class="fa-solid fa-circle-xmark"></i></b>
+                    </div>
+                    <div class="modal-body px-4 text-bg-light">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    Your Name <br>
+                                    <input class="form-control" name="your_name" placeholder="" type="text" required="">
+                                </div>
+                                <div class="col-md-6">
+                                    Email Address <br>
+                                    <input class="form-control" name="business_email" placeholder="" type="email"
+                                        required="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Phone <br>
+                                    <input name="phone_number" class="form-control" placeholder="" type="text"
+                                        pattern="[6-9]{1}[0-9]{9}" required="">
+                                </div>
+                                <div class="col-md-6">
+                                    Company <br>
+                                    <input class="form-control" name="company" placeholder="" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>Message</label>
+                                    <textarea name="message" class="form-control" placeholder="" required=""></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="btn btn-success w-100 mt-3" type="submit">Submit</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal -->
+    </body>
+
+</html>
