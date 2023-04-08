@@ -1,0 +1,294 @@
+React Once Again:-
+********************
+
+How to Create React app
+1. open cmd => create-react-app appname
+
+How to Run react-app
+1. npm start
+
+How to make first components:-
+1. components are block repeated code which we can use n of times.
+2. components are building block or the smallest unit of react.
+3. components are of two types
+    1. functional component 
+    2. Class component
+
+How to create functional components
+************************************
+import react from "react";
+
+function Demo(){
+    return (
+        <h1>This is functional component</h1>
+    )
+}
+
+How to create Class components
+************************************
+import react, {component} from "react";
+
+class Demo extents component{}
+    render(){
+        return (
+            <h1>This is functional component</h1>
+        )
+    }
+}
+
+How to use functional component and class component
+****************************************************
+in order to use any component if it functional or class Bassed.
+use them as tag :  <Demo/> => Demo() => calling
+
+for class Component Demo => <Demo/>
+
+
+Modularity in React
+********************
+We can not put all the component together in one file
+hence react support concept of modules
+that is we can make modules of each component and then export them 
+and we want we can then import them where ever required.
+
+Eg:-
+index.js
+
+function demo1(){
+    return (
+        <h1>Thi is functional component</h1>
+    )
+}
+
+function demo2(){
+    return (
+        <h1>Thi is functional component</h1>
+    )
+}
+
+
+
+inside src/components folder
+Demo3.jsx
+
+import react, {component} from "react";
+
+export default class Demo3 extents component{}
+render(){
+    return (
+        <h1>This is class component</h1>
+    );
+}
+
+}
+
+
+index.js 
+import Demo3 from "./components/Demo3"
+
+<Demo3/>
+
+
+concept of, pairing:-
+**********************
+JSX => Tags => xml
+xml standard => Tag closing it can be self or paired
+
+<Demo/> : valid
+or
+<Demo><Demo/>
+<Demo> : error/invalid
+
+
+concept of parent Tag:-
+************************
+Jsx code :- Two child component cannot sit together they must a parent.
+
+ReactDom.render(
+    <Demo1/>
+    <Demo2/>
+)
+
+error
+ReactDOM.render(
+    <div>
+        <Demo1/>
+        <Demo2/>
+    </div>
+)
+
+or
+
+ReactDOM.render(
+    <>
+        <Demo1/>
+        <Demo2/>
+    </>
+)
+
+ReactDOM.render(
+    <React.Fragment>
+        <Demo1/>
+        <Demo2/>
+    </React.Fragment>
+)
+
+case 2:-
+return (
+    <div>
+       <h1>Tag1</h1>
+        <h2>Tag2</h2>
+        <p>This is paragraph</p>
+    </div>
+)
+
+Note:: it is not advised to use,  div Tag as container because, div may take his own margin, border,padding and float, because it is block level Element. hence all the child inside div we have same property as of div.
+Any changes made inside div will effect all the child hence we use React.Fragment because it do not take any extra space and margin padding.
+
+hence we recommend to use, return (
+    <React.Fragment>
+        <h1>Tag</h1>
+        <h3>Tag</h3>
+        <h2>Tag</h2>
+    </React.Fragment>
+)
+
+or 
+
+hence we recommend to use, return (
+       <>
+        <h1>Tag</h1>
+        <h3>Tag</h3>
+        <h2>Tag</h2>
+    </>
+)
+
+08-01-2023 Agenda:-
+***********************
+1. working with css
+2. working with Bootstrap
+3. How to use Routing
+
+We know that, Using React we are making SPA.
+in MPA(Multi-page application), we can move from one page to another page
+but in react we have single page.
+so navigation can be done using hash url.
+
+hash url:- starts from #
+Normal url:-
+https://localhost:3000/contact =>Contact Page 
+https://localhost:3000/Gallery =>Gallery Page 
+https://localhost:3000/Service =>Service Page 
+https://localhost:3000/Home =>Home Page 
+https://localhost:3000 =>Home Page 
+
+hash url:-
+https://localhost:3000/#contact =>Contact component 
+https://localhost:3000/#Gallery =>Gallery component
+https://localhost:3000/#Service =>Service component
+https://localhost:3000/#Home =>Home component
+https://localhost:3000/# =>Home component
+
+
+1. How to this:-
+    JavaScript Router
+    React Router 
+
+Problem:-
+SPA => Header, Footer, Contact, Gallery, Login, Register => Rendering
+condition Rendering => url => contact then it must load, contect
+
+Location {
+    ancestorOrigins: DOMStringList,
+    href: 'http://localhost:3000/#prabhat', 
+    origin: 'http://localhost:3000', 
+    protocol: 'http:', 
+    host: 'localhost:3000', …}
+    ancestorOrigins: DOMStringList {length: 0}
+    assign: ƒ assign()
+    hash: "#prabhat"host: "localhost:3000"
+    hostname: "localhost"
+    href: "http://localhost:3000/#prabhat"
+    origin: "http://localhost:3000"
+    pathname: "/"port: "3000"
+    protocol: "http:"
+    reload: ƒ reload()
+    length: 0name: "reload"
+    arguments: (...)
+    caller: (...)[[Prototype]]: ƒ ()
+    replace: ƒ replace()
+    search: ""toString: ƒ toString()
+    valueOf: ƒ valueOf()
+    Symbol(Symbol.toPrimitive): undefined[[Prototype]]: Location
+
+
+External CSS : we have App.jsx or App.js (Both extension applicable)
+inside src but outside component
+App.css 
+it Applies globally in all component.
+
+And import this file, inside App.js 
+import "./App.css"
+
+Internal CSS:-
+-> it is individual css of each Component.
+-> it css will apply on single Component.
+
+here we make header.css for Header.jsx 
+here we make gallery.css for Gallery.jsx 
+here we make Contact.css for Contact.jsx 
+...
+......so on 
+
+Internal css will be placed inside components folder
+styles name folder
+
+src  > component > styles
+                        1. header.css
+                        2. footer.css
+                        3. gallery.css 
+                        4. contact.css 
+                        5. service.css
+                        etc.... etc...
+
+How to apply inline css :-
+1. in react style cannot applied as of, inline css just like html
+html => inline css => kabab case 
+for 
+<h1 style="border-color:red">Hy</h1> : possible because it is html.
+in react we have jsx.
+
+syntax case : pascal case or Camel case
+hence we cannot use kabab case.
+
+Note in Css file we can use css property with no problem.
+but incase inline css we cannot use kabab case in Jsx file
+hence the syntax of inline css should in proper format of pascal case.
+
+class => className
+style => style
+style = "border-color:red";
+in form of key and value
+
+single property
+style = {{borderColor:"red"}}
+style = {{border:"red"}}
+style = {{fontSize:"12px"}}
+multiple property
+{{fontSize:"12px",border:"yellow",backgroundColor:"blue",fontFamily:"vardana"}}
+
+const mystyle = {
+    border:"2px solid red",
+    float:"left",
+    backgroundColor:"blue",
+    height:"300px",
+    width:"300px"
+}
+
+<div style={mystyle}>I am Div</div>
+
+priority order:-
+inline < Internal < External ==> Scope
+tag     component   Global(App)
+
+same property color:red

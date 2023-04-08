@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,500;0,600;0,800;1,400&family=Poppins:wght@300;400&family=Roboto+Mono:wght@400;500&family=Roboto:wght@400;500&family=Satisfy&display=swap");
+
+.title-curly {
+  font-family: "Dancing Script", cursive;
+  font-size: 55px;
+}
+
+/* HEADER STYLING */
+.navbar {
+  background-color: whitesmoke;
+}
+.logo {
+  margin-top: -10px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header ul li a {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+.nav-item .nav-link:hover {
+  color: blue !important;
+}
+/* HEADER STYLING */
+
+/* MAIN STYLING  */
+.main,
+.main .carouselExampleCaptions,
+.carouselExampleCaptions .carousel-inner,
+.carousel-inner .carousel-item {
+  width: 100%;
+  height: 90vh;
+}
+.carousel-caption {
+  height: 55%;
+}
+.main img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+.carousel-item {
+  position: relative;
+}
+.main .carousel-item::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.467);
+  width: 100%;
+  height: 100%;
+}
+.carousel-item .carousel-caption {
+  z-index: 10;
+}
+.caption {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.main-p {
+  font-size: 20px;
+  width: 75%;
+  margin: auto;
+}
+.carousel-caption button {
+  margin: 40px 20px;
+  padding: 10px 20px;
+  font-size: 22px;
+}
+/* MAIN STYLING  */
+
+/* SEARCH STYLING  */
+.search {
+  width: 100%;
+}
+.search .main-div {
+  width: 80%;
+  box-shadow: 5px 5px 20px rgba(112, 112, 112, 0.322);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.search .div {
+  width: 300px;
+  height: 140px;
+  padding: 15px 5px;
+  border-right: 1px solid rgba(97, 97, 97, 0.299);
+  padding-left: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-div .div:nth-child(5) {
+  border-right: none;
+}
+.div p {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+.div input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px 7px;
+  font-size: 23px;
+  color: black;
+  padding-bottom: 6px;
+}
+.div select {
+  width: 50%;
+  margin-right: auto;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.436);
+  margin-bottom: 10px;
+}
+.div select option {
+  border: none;
+  outline: none;
+}
+
+.div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div button {
+  padding: 7px 30px;
+  width: 80%;
+  margin: auto;
+  font-size: 22px;
+}
+
+/* SEARCH STYLING  */
+
+/* CATEGORIES STYLING  */
+.categories {
+  width: 100%;
+  /* height: 600px; */
+  padding-top: 100px;
+  border-top: 1px solid rgba(0, 0, 0, 0.192);
+  margin-top: 150px;
+}
+.categories .title-curly{
+    font-size: 40px;
+}
+.categories h1 {
+  font-size: 55px;
+  font-family: "Roboto", sans-serif;
+}
+.categories .row {
+  margin: auto;
+}
+.categories .column {
+  height: 250px;
+  max-width: 310px;
+  margin: 3px auto;
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
+}
+.column span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.column:hover {
+  background-color: rgb(0, 106, 255);
+  color: white;
+}
+
+.sub a {
+  text-decoration: none;
+  color: black;
+}
+.t {
+  font-weight: 600;
+  opacity: 0.8 !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+}
+.s {
+  margin-top: 10px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+.sub {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.397);
+  padding-bottom: 40px;
+}
+.sub:nth-child(3) {
+  border-bottom: none;
+}
+
+.featured {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  /* background-color: purple; */
+}
+.featured h1{
+    font-size: 55px;
+}
+.card img {
+  height: 300px;
+  object-fit: cover;
+}
+.card {
+  border: none;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.154);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.featured .card:hover {
+  box-shadow: 10px 10px 20px rgba(79, 79, 79, 0.154),
+    -10px -10px 20px rgba(56, 56, 56, 0.166);
+}
+
+.update {
+  margin-left: 80px !important;
+  padding: 5px 20px;
+  padding-bottom: 7px;
+}
+.city {
+  font-size: 21px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.featured .icons i {
+  opacity: 0.5;
+}
+.featured .icons i:hover {
+  color: blue;
+  opacity: 1;
+}
+
+.card-body button {
+  width: 200px;
+}
+/* CATEGORIES STYLING  */
+
+
+/* CALCULATE STYLING  */
+.calculate {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(26, 54, 125);
+  }
+  .calculate p{
+    font-size: 35px;
+  }
+  .calculate span{
+    font-size: 25px;
+  }
+  .calculate button{
+    font-size: 26px;
+  }
+/* CALCULATE STYLING  */
+
+
+/* BANNER STYLING  */
+.featured .icons i:hover {
+    color: blue;
+    opacity: 1;
+  }
+  
+  .card-body button {
+    width: 200px;
+  }
+  
+  .banner {
+    width: 100%;
+    height: 600px;
+    margin-top: 60px;
+  }
+  .banner .container-fluid {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.486)),
+      url("./Images/car1.jpg");
+    background-size: cover;
+    background-position: center 50%;
+  }
+  .banner h1 {
+    font-size: 65px;
+  }
+  .banner p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .banner i {
+    font-size: 70px;
+    margin: 20px auto;
+    box-shadow: 4px 4px 50px rgba(0, 145, 255, 0.496),
+      -10px -10px 50px rgb(60, 60, 60);
+    border-radius: 50%;
+  }
+  .banner i:hover{
+      transform: scale(1.06);
+      transition: 0.2s all ease-out;
+  }
+  
+/* BANNER STYLING  */
+
+
+
+/* SALE STYLING  */
+
+.sale h1{
+  font-size: 55px;
+  font-family: "Roboto", sans-serif;
+}
+.sale {
+  width: 100%;
+  height: 900px;
+  padding-top: 80px;
+}
+
+.sale .container-fluid {
+  width: 100%;
+  margin: 30px auto;
+}
+
+.sale .owl-carousel {
+  width: 85%;
+  margin: 50px auto;
+}
+.owl .item {
+  margin: auto 30px !important;
+}
+.space {
+  width: 400px;
+  background-color: palevioletred;
+  margin: 0 50px;
+  border: 1px solid black;
+}
+.sale .card img {
+  height: 250px;
+}
+.sale .card img:hover{
+    transform: scale(1.03);
+    transition: 0.2s all ease-out;
+}
+.sale .card{
+    overflow: hidden;
+    margin-bottom: 30px !important;
+}
+.sale .views {
+  font-size: 15px;
+  color: rgb(0, 106, 255);
+}
+/* SALE STYLING  */
+
+
+/* SUBSCRIBE STYLING  */
+
+.subscribe{
+    width: 100%;
+    height: 540px;
+    background-color: rgb(26, 54, 125);
+    color: white;
+}
+.subs-text p{
+    font-size: 25px;
+}
+.subscribe .cont{
+    width: 100%;
+    height: 100%;
+}
+.subscribe .subs-text{
+    width: 50%;
+    height: 100%;
+    padding-left: 60px;
+    background-color: rgb(26, 54, 125);
+}
+.subscribe .subs-img{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.551),rgba(0, 0, 0, 0.669)), url("./Images/car2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.subs-img .carousel,
+.subs-img .carouselExampleControls .carousel-inner
+{
+    width: 40%;
+    margin: auto;
+}
+
+.carousel-inner .carousel-item {
+    width: 100%;
+    height: 100%;
+    
+}
+.subs-img .carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.subscribe input{
+    width: 60%;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.609);
+    margin-bottom: 20px;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+}
+.subscribe input::placeholder{
+    color: white;
+}
+
+/* SUBSCRIBE STYLING  */
+
+
+/* FOOTER STYILING  */
+footer li{
+    list-style: none;
+}
+
+footer ul{
+    margin-left: -28px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    opacity: 0.8;
+}
+/* FOOTER STYILING  */
