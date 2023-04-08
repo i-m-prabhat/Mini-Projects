@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                background: linear-gradient(#feefce, #ead2aa);
+            }
+
+            #box {
+                width: 90vw;
+                height: 90vh;
+                background: linear-gradient(#feefce, #ead2aa);
+                margin: 5vh auto;
+            }
+
+            .mybg {
+                background-color: #c28c60;
+                color: white;
+            }
+
+            .box {
+                width: 45vw;
+                float: left;
+                height: 80%;
+                /* border: 1px solid red; */
+                margin-top: 4%;
+            }
+
+            img {
+                width: 350px;
+                height: 350px;
+                border: 10px solid #c28c60;
+            }
+
+            .box1 {
+                padding-left: 50px;
+            }
+
+            .box2 {
+                box-sizing: border-box;
+                padding-left: 50px;
+                padding-top: 50px;
+
+            }
+
+            .round {
+                border-radius: 100px;
+            }
+
+            i {
+                margin-right: 10px;
+            }
+
+            .mycolor {
+                color: #c28c60;
+            }
+
+            .tea {
+                font-family: Brush Script MT;
+                font-size: 100px;
+
+            }
+
+            .org {
+                letter-spacing: 10px;
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="box">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid w-75 mybg me-5 ">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active mybg text-white fw-bold mx-4 fs-5" aria-current="page"
+                                    href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-4 fs-5" href="#">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-4 fs-5" href="#">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-4 fs-5" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-50">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                </div>
+            </nav>
+
+            <div class="box box1">
+                <span class="mycolor tea">Tea Shop</span>
+                <br>
+                <span class="mycolor me-auto">
+                    “If you are cold, tea will warm you; <br>
+                    if you are too heated, it will cool you; <br>
+                    If you are depressed, it will cheer you;<br>
+                    If you are excited, it will calm you.”
+                </span><br> <br>
+                <span class="btn mybg rounded-0 w-50 org">100% ORIGINAL</span>
+                <br>
+                <br>
+                <button class="btn mybg rounded-0 w-25">CLICK HERE</button>
+                <br>
+                <br>
+
+                <a href="#"><i class="fa fa-fw fa-instagram mybg round fs-5"></i></a>
+                <a href="#"><i class="fa fa-fw fa-facebook mybg round fs-5"></i></a>
+                <a href="#"><i class="fa fa-fw fa-twitter mybg round fs-5"></i></a>
+
+                <br>
+                <span>@teashop</span>
+            </div>
+            <div class="box box2">
+                <img src="chai.jpg" alt="">
+            </div>
+        </div>
+    </body>
+
+</html>
