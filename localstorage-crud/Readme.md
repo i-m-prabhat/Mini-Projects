@@ -2,9 +2,7 @@
 
 This is the product page using JavaScript that Add Product in localstorage and performing CRUD operation on products
 
-## URL
-
-<https://i-m-prabhat.github.io/ProductAddingInLocalstorage/>
+## <a href="https://localstoragecrudbypp.netlify.app/">Deployment </a>
 
 ## Demo
 
