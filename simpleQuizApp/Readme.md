@@ -5,9 +5,7 @@ This is The Simple Quiz App Using pure Venilla  JavaScript
 This Quiz App Generate Random Quiz.
 
 
-## URL
-
-<https://i-m-prabhat.github.io/simpleQuizApp/>
+## <a href="https://simplequizappbypp.netlify.app/">Deployment </a>
 
 ## Demo
 
