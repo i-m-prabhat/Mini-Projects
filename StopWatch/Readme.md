@@ -2,9 +2,7 @@
 
 This Stop Watch is designed in js
 
-## URL 
-
-https://i-m-prabhat.github.io/StopWatch/
+## <a href="https://stopwatchbypp.netlify.app/">Deployment </a>
 
 ## Demo
 
