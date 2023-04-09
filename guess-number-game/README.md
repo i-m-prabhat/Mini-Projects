@@ -1,8 +1,8 @@
 # guess-number-game
 this is the Number guess game in javaScript
 
-## URL
-https://i-m-prabhat.github.io/guess-number-game/
+## <a href="https://guessnumberg.netlify.app/">Deployment </a>
+
 
 ## tutorials
 To start Random Number Guess game
