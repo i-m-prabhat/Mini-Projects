@@ -2,9 +2,7 @@
 
 digital clock using js
 
-## URL
-
-https://i-m-prabhat.github.io/DigitalClock/
+## <a href="https://digitalclockbypp.netlify.app/">Deployment</a>
 
 ## demo
 
