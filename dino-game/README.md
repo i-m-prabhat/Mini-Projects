@@ -2,9 +2,7 @@
 # Dino Game
 dino game using pure venilla Js 
 
-## Deployment
-
-https://i-m-prabhat.github.io/dino-game/
+## <a href="https://dinotiktik.netlify.app/">Deployment</a>
 
 
 ## Demo
