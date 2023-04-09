@@ -30,4 +30,4 @@ Here are some of my mini projects that i have done in free time listed below
 <a href="#">Back To Top 🔼</a>
 <br/>
 <br/>
-<a href="https://github.com/i-m-prabhat/Mini-Projects">@Mini Projects</a>
+<a href="https://github.com/i-m-prabhat/Mini-Projects">@Mini Projects</a>   <a href="https://github.com/i-m-prabhat/Mini-Projects/blob/master/LICENSE">@License </a>
