@@ -2,9 +2,7 @@
 
 normal bootstrap modal
 
-## URL
-
-https://i-m-prabhat.github.io/modal/
+## <a href="https://bootstrapmodal.netlify.app/">Deployment </a>
 
 ## Snapshots
 
