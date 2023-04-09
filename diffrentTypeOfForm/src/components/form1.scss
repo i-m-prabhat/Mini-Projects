@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(rgb(36, 36, 204), rgb(182, 8, 192));
+}
+
+#box {
+    width: 360px;
+    height: 500px;
+    font-size: 10px;
+    margin: 50px auto;
+    padding: 0px;
+    background-color: aliceblue;
+}
+
+#box1 {
+    width: 360px;
+    height: 20px;
+    background-color: black;
+    // padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+#box2 {
+    width: 380px;
+    min-height: 350px;
+    // background-color: aqua;
+    padding: 0px;
+}
+
+#box21 {
+    width: 320px;
+    height: 180px;
+    /* margin: 5px; */
+
+    padding: 30px;
+    /* background-color: blueviolet; */
+}
+
+#box22 {
+    width: 300px;
+    height: 30px;
+    /* background-color: green; */
+    padding: 130px;
+    margin: 5px;
+
+}
+
+.name {
+    /* background-color: aqua; */
+    width: 100px;
+    display: block;
+    padding: 5px;
+    float: left;
+    color: black;
+    margin: 5px;
+}
+
+.num1 {
+    width: 70px;
+    display: block;
+    float: left;
+    /* background-color: blue; */
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.num2 {
+    width: 120px;
+    display: block;
+    float: left;
+    margin: 5px;
+
+    /* background-color: blue; */
+    padding: 5px;
+}
+
+select {
+    width: 240px;
+    height: 20px;
+    margin: 5px;
+
+}
+
+#button {
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 10px;
+    width: 90px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input,
+select {
+    background-color: rgba(186, 185, 185, 0.624);
+    border: none;
+    height: 23px;
+}
+
+#button:hover {
+    background-color: blueviolet;
+    color: white;
+}
