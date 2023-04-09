@@ -1,11 +1,7 @@
 # Desirecart
 This is the DesireCart Shopping  webpage Using Bootstrap
 
-## URL 
-https://desirecart.netlify.app/
-
-
-https://i-m-prabhat.github.io/desirecart/
+## <a href="https://desirecart.netlify.app/">Deployment </a>
 
 ## Snapshots 
 ![Screenshot (158)](https://user-images.githubusercontent.com/117756490/212664939-914a680d-733f-46ce-b998-6967ebefc917.png)
